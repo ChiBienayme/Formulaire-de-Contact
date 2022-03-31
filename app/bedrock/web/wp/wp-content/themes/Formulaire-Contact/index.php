@@ -78,7 +78,7 @@ foreach ($fields as $field => $v) {
     }
 }
 
-//  Verification des conditions des les varaiables pour la soumission 
+//  Verification des conditions des variables pour la soumission 
 if ($formSubmitted) {
     foreach ($fields as $field => $validator) { 
         $value = $_POST[$field]; 
