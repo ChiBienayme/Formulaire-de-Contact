@@ -1,0 +1,158 @@
+/*
+Theme Name: Formulaire de Contact
+Template:       twentytwelve
+*/
+@import url("../twentytwelve/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+/*****Body*****/
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+/*****BEGIN Personnalisation du formulaire de contact *****/
+.header {
+  background-color: #06477c;
+  width: 63vw;
+  height: auto;
+  color: white;
+  padding: 1% 1% 1% 2%;
+  margin: 2%;
+  border-radius: 5px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0% 0% 0% 7%;
+}
+.screenReader {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+.thanks {
+  background: rgb(245, 251, 255);
+  border: 1px solid rgb(116, 128, 150);
+  padding: 5% 2% 5% 5%;
+}
+.errorForms {
+  border: 1px solid #f00;
+  border-radius: 5px;
+  color: #f00;
+  width: 62vw;
+  padding: 2%;
+  margin: 2%;
+}
+/*RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .errorForms {
+    padding: 2%;
+    margin: 2% 14% 2% 2%;
+  }
+}
+.error {
+  color: #f00;
+}
+
+/*****Formulaire*****/
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 2% 5% 5%;
+  margin: 2% 15% 2% 2%;
+  border: 1px solid rgb(221, 239, 252);
+  box-shadow: 5px 10px 10px 5px rgb(218, 233, 243);
+  border-radius: 10px;
+  width: 60vw;
+  height: auto;
+}
+/*RESPONSIVE */
+@media screen and (max-width: 600px) {
+  #contactForm {
+    width: 90%;
+  }
+}
+
+ol.forms {
+  float: center;
+  list-style: none;
+  margin: 10;
+  width: 100%;
+}
+
+ol.forms li {
+  clear: both;
+  float: center;
+  margin-bottom: 18px;
+  position: relative;
+  width: 100%;
+}
+
+ol.forms label {
+  padding-right: 20px;
+  width: 100px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+ol.forms input,
+ol.forms textarea {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid rgb(203, 220, 252);
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+}
+
+ol.forms input:hover,
+ol.forms textarea:hover {
+  background: none repeat scroll 0 0 #f1f5fa;
+  border: 1px solid rgb(116, 128, 150);
+  padding: 5px;
+  width: 400px;
+}
+
+ol.forms textarea {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid rgb(116, 128, 150);
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+}
+
+ol.forms textarea:hover {
+  background: none repeat scroll 0 0 #f1f5fa;
+  border: 1px solid #8e9ba9;
+  padding: 5px;
+  width: 400px;
+}
+
+ol.forms li.screenReader {
+  margin-bottom: 0;
+}
+
+ol.forms li.buttons button {
+  background-color: #06477c;
+  color: white;
+  border: 1px solid #8e9ba9;
+  padding: 1%;
+  margin: 5%;
+  width: 100px;
+  height: auto;
+}
+
+ol.forms li.buttons button:hover {
+  background: #480170;
+  color: white;
+}
+
+ol.forms li.inline input {
+  width: auto;
+}
+
+ol.forms li.inline label {
+  display: inline;
+  float: none;
+  width: auto;
+}
+/*****END Personnalisation du formulaire de contact *****/
